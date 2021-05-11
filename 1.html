@@ -4,45 +4,19 @@
 <head>
     <title>Web - HTML</title>
     <meta charset="utf-8">
+    <script src="color.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body data-mode="day">
+<body>
 
     <!-- 나이트비전/데이비전  -->
 
     <body>
         <!--나이트비전 Top-->
         <input type="button" value="night" onclick="
-        var target = document.querySelector('body'); 
-        if(this.value === 'night'){
-        target.style.backgroundColor='#151515';
-        target.style.color='#f4eee8';
-        this.value = 'day';
-    
-        // 하이퍼링크 색 변환
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length) {
-        alist[i].style.color = 'powderblue';
-        i = i + 1;
-    
-        }
-    
-        } else {
-        target.style.backgroundColor='#f4eee8';
-        target.style.color='black';
-        this.value = 'night'
-    
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length) {
-        alist[i].style.color = 'blue';
-        i = i + 1;
-         }
-        }
-        ">
+    nightDayHandler(this);">
 
     <h1><a href="index.html" class="links">WEB</a></h1>
 
