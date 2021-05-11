@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop & Array</h1>
+    <script>
+        var coworkers = ['he','llo','wor','ld', 'not'];
+    </script>
+    <h2>Co workers</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while( i < coworkers.length ) {  //데이터가 바뀐다고 로직을 바꿔서는 ㄴㄴ coworkers.length = 배열의 길이 반영
+                document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+    
+</body>
+</html>

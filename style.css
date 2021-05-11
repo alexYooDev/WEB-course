@@ -13,7 +13,9 @@ ol{
     padding: 20px;
 }
 body {
+
     margin: 0;
+    background-color: #f4eee8;
 }
 #grid {
     display: grid;

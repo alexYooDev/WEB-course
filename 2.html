@@ -2,12 +2,58 @@
 <html>
 
 <head>
-    <title>Web Practice - HTML</title>
+    <title>Web - CSS</title>
     <meta charset="utf-8">
+
+    <script>
+
+        //나이트비전 함수
+        function nightDayHandler(self) {
+
+            var target = document.querySelector('body');
+            if (self.value === 'night') {
+                target.style.backgroundColor = '#151515';
+
+                target.style.color = '#f4eee8';
+                self.value = 'day';
+                document.querySelector('#night_top').value = 'day';
+
+                //하이퍼링크 색 변환
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'pink';
+                    i = i + 1;
+                }
+
+            } else {
+                target.style.backgroundColor = '#f4eee8';
+                target.style.color = 'black';
+                self.value = 'night'
+                document.querySelector('#night_top').value = 'night';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'blue';
+                    i = i + 1;
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!--나이트비전 Top-->
+    <input type="button" id="night_top" value="night" onclick="
+    nightDayHandler(this);
+    ">
+    <input type="button" id="night_top" value="night" onclick="
+    nightDayHandler(this);
+    ">
+    <!--중복을 없앤다-->
+
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
         <ol>
@@ -30,6 +76,39 @@
             </p>
         </div>
     </div>
+    <!-- 나이트 비전 Bottom-->
+    <input type="button" id="night_bottom" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+    target.style.backgroundColor='#151515';
+
+    target.style.color='#f4eee8';
+    this.value = 'day';
+    document.querySelector('#night_top').value = 'day';
+
+    //하이퍼링크 색 변환
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
+    }
+
+    } else {
+        target.style.backgroundColor='#f4eee8';
+        target.style.color='black';
+        this.value = 'night'
+        document.querySelector('#night_top').value = 'night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+        alist[i].style.color = 'blue';
+        i = i + 1;
+    }
+}
+    ">
+
 </body>
 
 </html>
