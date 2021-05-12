@@ -1,13 +1,15 @@
 var body = {
     setColor: function (color) {
         document.querySelector('body').style.color = color;
+        //$('body').css('color', color);
     },
 
     setBackgroundColor: function (color) {
         document.querySelector('body').style.backgroundColor = color;
+        //$('body').css('backgroundColor', color);
     }
 
-};
+}
 
 var links = {
     setColor: function (color) {
@@ -18,12 +20,13 @@ var links = {
             i = i + 1;
 
         }
+       // $('a').css('color', color);
     }
-};
+}
 
 
 function nightDayHandler(self) {
-    var target = document.querySelector('body');
+    //var target = document.querySelector('body');
     if (self.value === 'night') {
         body.setBackgroundColor('#151515');   //바탕은 검은색
         body.setColor('#f4eee8'); //글은 베이지색
