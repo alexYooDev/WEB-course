@@ -1,0 +1,22 @@
+:root {
+  --clr-dark: #151515;
+  --clr-light: beige;
+  --clr-links-dark: pink;
+  --clir-liks-light: blue;
+
+  --fore-ground: var(--clr-dark);
+  --back-ground: var(--clr-light);
+}
+
+body {
+  background: var(--back-ground);
+  color: var(--fore-ground);
+}
+
+.nightMode {
+  --back-ground: var(--clr-dark);
+  --fore-ground: var(--clr-light);
+
+  background: var(--back-ground);
+  color: var(--fore-ground);
+}

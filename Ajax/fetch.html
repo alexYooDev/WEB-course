@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <article></article>
+    <input
+      type="button"
+      value="fetch"
+      onclick="
+        /* fetch('html').then(function(response){    //fetch: 서버에 'html'요청, then: 응답이 끝나면 다른 작업하라 -> 익명함수
+            response.text().then(function(text){  //요청한 것 text 변수에 담아
+                alert(text);                      //전달
+                document.querySelector('article').innerHTML = text;
+            })
+        }) */
+        //Asynchronous 비동기 (병렬적)
+      
+        fetch('html').then(function(response){
+          console.log(response.status);
+          if(response.status == '404') {
+            alert('Not found')
+          }
+        });
+        console.log(1);
+        console.log(2);
+        "
+    />
+  </body>
+</html>

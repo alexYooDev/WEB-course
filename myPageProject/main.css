@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 120px;
+    padding: 0px 120px;
     list-style: none;
     font-size: 1.2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -69,7 +69,17 @@ h1{
     text-align: left;
     margin-top: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: auto;
+    width: 45%;
 
+}
+
+#text{
+    position: absolute;
+    text-align: center;
+    top: 15rem;
+    right: 2rem;
+    width: 45%;
 }
 
 #contact{
